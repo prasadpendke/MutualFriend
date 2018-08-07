@@ -8,4 +8,4 @@ I have created mutual.json to store data .
 Test case :
 Enter "prasad@twitter.com" and "ramesh@twitter.com" in two text field 
 
-click on submit , you will get mutual friends 
+On click of submit , you will get mutual friends 
