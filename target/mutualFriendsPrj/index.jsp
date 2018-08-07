@@ -4,8 +4,8 @@
 <div ng-app="mutualApp" ng-controller="mutualCtrl">
 <form name="mutualForm" ng-submit="submitMutual()">
 
-First Friend : <input type="text" ng-model="id1" name="id1" placeholder="Enter Id of first friend"/>
-Second Friend : <input type="text" ng-model="id2" name="id2" placeholder="Enter Id of second friend"/>
+First Friend : <input type="text" ng-model="id1" name="id1" placeholder="Account Id"/>
+Second Friend : <input type="text" ng-model="id2" name="id2" placeholder="Account Id"/>
 <br><br>
 <button type="submit">Submit</button>
 </form>
@@ -24,12 +24,13 @@ City : {{x.city}}<br>
 
 var app = angular.module("mutualApp",[]);
 app.controller("mutualCtrl",function($scope,$http){
-	$scope.id1="prasad@twitter.com";
-	$scope.id2="ramesh@twitter.com";
 	$scope.submitMutual=function(){
 		$http.get("http://localhost:8080/mutualFriendsPrj/mutual/?id1="+$scope.id1+"&id2="+$scope.id2).then(
-				 function(response){
+				 function(response){				 
 					$scope.output=response.data; 
+					if($scope.output.length<=0){
+						alert('No Mutual Friends');
+					}
 				 },
 				 function(response){
 					 console.log("error");
