@@ -28,8 +28,7 @@ app.controller("mutualCtrl",function($scope,$http){
 	$scope.id2="ramesh@twitter.com";
 	$scope.submitMutual=function(){
 		$http.get("http://localhost:8080/mutualFriendsPrj/mutual/?id1="+$scope.id1+"&id2="+$scope.id2).then(
-				 function(response){
-					 
+				 function(response){				 
 					$scope.output=response.data; 
 					if($scope.output.length<=0){
 						alert('No Mutual Friends');
