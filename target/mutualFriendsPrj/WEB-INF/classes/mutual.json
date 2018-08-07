@@ -1,0 +1,32 @@
+[
+	{
+		"accountId":"prasad@twitter.com",
+		"name": "Prasad",
+		"city": "Nagpur",
+		"friendsList": "suresh@twitter.com,ganesh@twitter.com,manish@twitter.com"
+	},
+	{
+		"accountId": "ramesh@twitter.com",
+		"name": "Ramesh",
+		"city": "Mumbai",
+		"friendsList": "suresh@twitter.com,manish@twitter.com"
+	},	
+	{
+		"accountId":"suresh@twitter.com",
+		"name": "Suresh",
+		"city": "Bangalore",
+		"friendsList": "prasad@twitter.com,ramesh@twitter.com,manish@twitter.com"
+	},
+	{
+		"accountId":"ganesh@twitter.com",
+		"name": "Ganesh",
+		"city": "Pune",
+		"friendsList": "prasad@twitter.com"
+	},
+	{
+		"accountId": "manish@twitter.com",
+		"name": "Manish",
+		"city": "HYD",
+		"friendsList": "ramesh@twitter.com"
+	}
+]
